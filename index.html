@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width,initial-scale = 1.0,maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="author" content="steve ansah ababio"/>
+        <meta name="charset" content="utf-8"/>
+        <link href="./fontawesome pro/css/algo/1/all.css" rel="stylesheet" />
+        <link href="./fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet" />
+        <link href="playermain.css" rel="stylesheet" text="text/css" />
+    </head>
+    <body>
+        <section id="main">
+            <div id="audio-container"></div>
+            <header id="main-header">
+                <h1>Adhoc player</h1>
+            </header>
+            <div class="menu-container">
+                <div class="menu-icon-container">
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                   <div id="device-container"><i class='fal fa-phone-laptop fa-2x'></i>: <p id="devices"></p></div> 
+                    <!--<div id='signout'><i class="fal fa-sign-out fa-2x"></i></div> -->
+                </ul>
+            
+            </nav>
+            <section id="select-multiple">
+                <form enctype="multipart/form-data" id="myform1">
+                    <input type="file" id="file2" style="display:none;" capture multiple/>
+                </form>
+                <div id="selected-tracks">
+
+                </div>
+            </section>
+            <aside id="music-config">
+                <form enctype="multipart/form-data" id="myform2">
+                    <input type="file" id="fileselect" capture />
+                </form>
+            </aside>
+        </section>
+        <section id="cover-image"></section>
+        <section id="playing-track">
+            <p id="playing-track-text"></p>
+        </section>
+        <section id="music-player-container">
+            <div id="music-slider-container">
+                <input  type="range" class="track-slider music-slider" value='0' min="0"/>
+            </div>
+            <div id="music-tools-container">
+                <div class="track-repeat">
+                    <i class="fal fa-random  musicicons2"></i>
+                    <i class="fal repeat fa-repeat musicicons2 repeatdisabled"></i>
+                </div>
+                <div class="forward-play musicicons" ><i class="fal fa-step-backward back"></i></div>
+                <div class="play-button musicicons" ><i class="fal fa-play playicon"></i></div>
+                <div class="reverse-play musicicons"><i class="fal fa-step-forward forward"></i></div>
+                <div class="volume musicicons"><i class="fal vol fa-volume-up"></i><input id="vol-slider" class= "music-slider volume-slider" type="range" value = '100' min="0" max='100'/></div>
+            </div>
+        </section>
+        <script src="playermain.js"></script>
+    </body>
+</html>
